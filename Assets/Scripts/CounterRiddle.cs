@@ -10,6 +10,7 @@ public class CounterRiddle : MonoBehaviour
     public IncrementCounterBtn incrementCounterBtn1er;
     public IncrementCounterBtn incrementCounterBtn10er;
     public IncrementCounterBtn incrementCounterBtn100er;
+    public AudioSource winSound;
 
     int digit1er = 0;
     int digit10er = 0;
@@ -46,11 +47,14 @@ public class CounterRiddle : MonoBehaviour
         {
             EventManager.instance.counterSolved.Invoke(true);
             Debug.Log("Counter Riddle Solved");
-            // Todo: Erflogssound?
+            if (winSound != null)
+                winSound.Play();
         }
         else
         {
             EventManager.instance.counterSolved.Invoke(false);
+            if (winSound != null)
+                winSound.Stop();
         }
     }
 }
