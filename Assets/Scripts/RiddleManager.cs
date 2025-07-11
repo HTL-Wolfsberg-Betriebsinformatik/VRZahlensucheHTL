@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class RiddleManager : MonoBehaviour
 {
-    private bool _dummyRiddleSolved = true;
     private bool _levelDone = false;
+    
+    private bool _box1RiddleSolved = false;
     private bool _counterDone = false;
+    private bool _searchSolved = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        EventManager.instance.solvedButtonPress.AddListener(DummyRiddleSolved);
+        EventManager.instance.box1Solved.AddListener(Box1RiddleSolved);
         EventManager.instance.counterSolved.AddListener(CounterRiddleSolved);
+        EventManager.instance.buttonSearchSolved.AddListener(ButtonSearchSolved);
     }
 
     private void CounterRiddleSolved(bool solved)
@@ -19,9 +22,15 @@ public class RiddleManager : MonoBehaviour
         CheckRiddleSolved();
     }
 
-    void DummyRiddleSolved()
+    void Box1RiddleSolved(bool solved)
     {
-        _dummyRiddleSolved = true;
+        _box1RiddleSolved = true;
+        CheckRiddleSolved();
+    }
+
+    void ButtonSearchSolved()
+    {
+        _searchSolved = true;
         CheckRiddleSolved();
     }
 
@@ -29,7 +38,7 @@ public class RiddleManager : MonoBehaviour
     {
         if (_levelDone)
             return;
-        if (_dummyRiddleSolved && _counterDone)
+        if (_box1RiddleSolved && _counterDone && _searchSolved)
         {
             _levelDone = true;
             EventManager.instance.levelDone.Invoke();

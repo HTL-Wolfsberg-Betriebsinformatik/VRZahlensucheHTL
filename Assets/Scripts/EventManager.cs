@@ -26,18 +26,16 @@ public class EventManager : MonoBehaviour
     /// </summary>
     public UnityEvent levelDone;
     
-    /// <summary>
-    /// Dummy Riddle
-    /// </summary>
-    public UnityEvent solvedButtonPress;
-    
     public UnityEvent<bool> counterSolved;
+    public UnityEvent<bool> box1Solved;
+    public UnityEvent buttonSearchSolved;
     
     void Init()
     {
         levelDone ??= new UnityEvent();
-        solvedButtonPress ??= new UnityEvent();
         counterSolved ??= new UnityEvent<bool>();
+        box1Solved ??= new UnityEvent<bool>();
+        buttonSearchSolved ??= new UnityEvent();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -51,10 +49,4 @@ public class EventManager : MonoBehaviour
             DestroyImmediate(this);
         }
     }
-
-    public void InvokeSolvedButtonPress()
-    {
-        levelDone.Invoke();
-    }
-
 }
