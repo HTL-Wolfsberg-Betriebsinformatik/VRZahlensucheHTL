@@ -4,19 +4,26 @@ using UnityEngine.Events;
 public class EventManager : MonoBehaviour
 {
     private static EventManager _eventManager;
-    
-    public static EventManager instance {
-        get {
-            if (!_eventManager) {
+
+    public static EventManager instance
+    {
+        get
+        {
+            if (!_eventManager)
+            {
                 _eventManager = FindFirstObjectByType(typeof(EventManager)) as EventManager;
 
-                if (!_eventManager) {
+                if (!_eventManager)
+                {
                     Debug.LogError("There needs to be one active EventManager script on a GameObject in your scene.");
-                } else {
+                }
+                else
+                {
                     _eventManager.Init();
                     DontDestroyOnLoad(_eventManager);
                 }
             }
+
             return _eventManager;
         }
     }
@@ -25,11 +32,11 @@ public class EventManager : MonoBehaviour
     /// Solved all riddles
     /// </summary>
     public UnityEvent levelDone;
-    
+
     public UnityEvent<bool> counterSolved;
     public UnityEvent<bool> box1Solved;
     public UnityEvent buttonSearchSolved;
-    
+
     void Init()
     {
         levelDone ??= new UnityEvent();

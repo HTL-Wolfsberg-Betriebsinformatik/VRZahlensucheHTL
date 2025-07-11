@@ -34,6 +34,9 @@ public class Box1Riddle : MonoBehaviour
             _forbiddenObjStartPos.Add(t.position);
             _forbiddenObjStartRot.Add(t.rotation);
         }
+
+        // DEBUG:
+        RestObjects();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -102,7 +105,7 @@ public class Box1Riddle : MonoBehaviour
         {
             forbiddenObjects[i].transform.position = _forbiddenObjStartPos[i];
             forbiddenObjects[i].transform.rotation = _forbiddenObjStartRot[i];
-            Rigidbody rb = mustBeInObjects[i].GetComponent<Rigidbody>();
+            Rigidbody rb = forbiddenObjects[i].GetComponent<Rigidbody>();
             if (rb != null)
             {
                 rb.linearVelocity = Vector3.zero;

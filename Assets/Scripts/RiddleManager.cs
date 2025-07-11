@@ -3,11 +3,11 @@ using UnityEngine;
 public class RiddleManager : MonoBehaviour
 {
     private bool _levelDone = false;
-    
+
     private bool _box1RiddleSolved = false;
     private bool _counterDone = false;
     private bool _searchSolved = false;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

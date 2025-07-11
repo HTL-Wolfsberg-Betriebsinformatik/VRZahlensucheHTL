@@ -6,7 +6,7 @@ public class CounterRiddle : MonoBehaviour
 {
     public int solution = 12;
     // TODO: Connect eventsystem and IncrementCounterBtn
-    
+
     public IncrementCounterBtn incrementCounterBtn1er;
     public IncrementCounterBtn incrementCounterBtn10er;
     public IncrementCounterBtn incrementCounterBtn100er;
@@ -29,13 +29,13 @@ public class CounterRiddle : MonoBehaviour
         digit1er = cnt;
         CheckSolution();
     }
-    
+
     void Receive10er(int cnt)
     {
         digit10er = cnt;
         CheckSolution();
     }
-    
+
     void Receive100er(int cnt)
     {
         digit100er = cnt;
