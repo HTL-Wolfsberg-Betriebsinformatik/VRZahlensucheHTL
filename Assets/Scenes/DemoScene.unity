@@ -12901,13 +12901,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8908833148325884413, guid: fd28f23af44f73f4a95e33435872ad15, type: 3}
       propertyPath: m_Text
-      value: "Deine Mission in dieser virtuellen Welt ist es, drei knifflige R\xE4tsel
-        zu l\xF6sen um den L\xF6sungscode zu erhalten.\n\nDeine Steuerung\r\n   
-        Gehen: Bewege den linken Stick, um frei zu laufen.\r\n    Teleportieren:
-        Ziele mit dem rechten Stick und lass los, um schnell an einen anderen Ort
-        zu springen.\r\n    Greifen: Dr\xFCcke die seitliche Greiftaste (Grip), um
-        Objekte aufzuheben.\r\n    Klicken: Benutze den Trigger (unter dem Zeigefinger),
-        um Schalter zu bet\xE4tigen oder Auswahlen zu best\xE4tigen."
+      value: "Deine Mission in dieser virtuellen Welt ist es, drei R\xE4tsel zu l\xF6sen
+        um den L\xF6sungscode zu erhalten.\n\nDeine Steuerung\r\n    Gehen: Bewege
+        den linken Stick, um frei zu laufen.\r\n    Teleportieren: Ziele mit dem
+        rechten Stick und lass los, um schnell an einen anderen Ort zu springen.\r\n   
+        Greifen: Dr\xFCcke die seitliche Greiftaste (Grip), um Objekte aufzuheben.\r\n   
+        Klicken: Benutze den Trigger (unter dem Zeigefinger), um Schalter zu bet\xE4tigen
+        oder Auswahlen zu best\xE4tigen."
       objectReference: {fileID: 0}
     - target: {fileID: 8908833148325884413, guid: fd28f23af44f73f4a95e33435872ad15, type: 3}
       propertyPath: m_FontData.m_FontSize
