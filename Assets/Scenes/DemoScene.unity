@@ -1073,8 +1073,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Gratulation! Du hast alle Aufgaben gel\xF6st.\nWenn du auch lernen m\xF6chtest
-    wie man solche Anwendungen entwickelt besuche doch Betriebsinformatik an der
+  m_Text: "Gratulation! Du hast alle Aufgaben gel\xF6st.\nWenn du auch lernen m\xF6chtest,
+    wie man solche Anwendungen entwickelt, besuche doch Betriebsinformatik an der
     HTL Wolfsberg.\n\nHier ist dein L\xF6sungscode: 1979"
 --- !u!222 &75978402
 CanvasRenderer:
@@ -10313,8 +10313,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Irgendwo hier sollte sich noch ein Knopf dr\xFCcken der darauf wartet
-    Gedr\xFCckt zu werden ..."
+  m_Text: "Irgendwo hier sollte sich noch ein Knopf befinden, der darauf wartet gedr\xFCckt
+    zu werden ..."
 --- !u!222 &527589594
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12901,8 +12901,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8908833148325884413, guid: fd28f23af44f73f4a95e33435872ad15, type: 3}
       propertyPath: m_Text
-      value: "Deine Mission in dieser virtuellen Welt ist es, drei R\xE4tsel zu l\xF6sen
-        um den L\xF6sungscode zu erhalten.\n\nDeine Steuerung\r\n    Gehen: Bewege
+      value: "Deine Mission in dieser virtuellen Welt ist es, drei R\xE4tsel zu l\xF6sen,
+        um den L\xF6sungscode zu erhalten.\n\nDeine Steuerung:\r\n    Gehen: Bewege
         den linken Stick, um frei zu laufen.\r\n    Teleportieren: Ziele mit dem
         rechten Stick und lass los, um schnell an einen anderen Ort zu springen.\r\n   
         Greifen: Dr\xFCcke die seitliche Greiftaste (Grip), um Objekte aufzuheben.\r\n   
@@ -24951,10 +24951,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Zwei dieser drei Dinge arbeiten eng zusammen, um Daten und Befehle auszutauschen.
-    Zwei Dinge liefert zwar Energie, aber auf eine ganz andere Weise. Welche Objekte
-    geh\xF6rt ins Team der Technik?\nWirf die passenden Objekte in die Box links
-    von dir!"
+  m_Text: "Ein paar dieser vier Dinge arbeiten eng zusammen, um Daten und Befehle
+    auszutauschen. Zwei Dinge liefern zwar Energie, aber auf eine ganz andere Weise.
+    Welche Objekte geh\xF6ren ins Team der Technik?\nWirf die passenden Objekte in
+    die Box links von dir!"
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
