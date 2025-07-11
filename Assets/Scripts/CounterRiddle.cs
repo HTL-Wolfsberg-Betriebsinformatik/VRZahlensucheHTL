@@ -11,6 +11,7 @@ public class CounterRiddle : MonoBehaviour
     public IncrementCounterBtn incrementCounterBtn10er;
     public IncrementCounterBtn incrementCounterBtn100er;
     public AudioSource winSound;
+    public ParticleSystem winParticles;
 
     int digit1er = 0;
     int digit10er = 0;
@@ -49,12 +50,16 @@ public class CounterRiddle : MonoBehaviour
             Debug.Log("Counter Riddle Solved");
             if (winSound != null)
                 winSound.Play();
+            if (winParticles != null)
+                winParticles.Play();
         }
         else
         {
             EventManager.instance.counterSolved.Invoke(false);
             if (winSound != null)
                 winSound.Stop();
+            if (winParticles != null)
+                winParticles.Stop();
         }
     }
 }

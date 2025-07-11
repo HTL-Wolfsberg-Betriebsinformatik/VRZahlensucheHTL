@@ -90,12 +90,24 @@ public class Box1Riddle : MonoBehaviour
         {
             mustBeInObjects[i].transform.position = _mustObjStartPos[i];
             mustBeInObjects[i].transform.rotation = _mustObjStartRot[i];
+            Rigidbody rb = mustBeInObjects[i].GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
         }
 
         for (int i = 0; i < forbiddenObjects.Count; i++)
         {
             forbiddenObjects[i].transform.position = _forbiddenObjStartPos[i];
             forbiddenObjects[i].transform.rotation = _forbiddenObjStartRot[i];
+            Rigidbody rb = mustBeInObjects[i].GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
         }
 
         _isInBox.Clear();
