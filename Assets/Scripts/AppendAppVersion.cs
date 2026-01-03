@@ -10,6 +10,6 @@ public class AppendAppVersion : MonoBehaviour
             Debug.LogError($"Text component {gameObject.name} is missing. Can not append version.");
             return;
         }
-        textBox.text += "\nv" + Application.version;
+        textBox.text = "v" + Application.version;
     }
 }
